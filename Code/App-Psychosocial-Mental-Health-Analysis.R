@@ -16,13 +16,15 @@ ui <- dashboardPage(
     sidebarMenu(
       id = "tab",
       menuItem("Home", tabName = "home", icon = icon("home")),
-      menuItem("Mental Health Analysis", tabName = "Mental Health Analysis", icon = icon("edit")),
-      conditionalPanel(condition = "input.tab == 'Mental Health Analysis'",
-                       div(
-                         selectInput("psy_selector", "Psychological Problem", choices = data_psy), 
-                         selectInput("category_selector", "Category", choices = data_category),
-                         selectInput("summary_selector", "Summary", choices = data_summary)
-                       ))
+      menuItem("Mental Health Analysis", tabName = "mental_health_analysis", icon = icon("edit")),
+      conditionalPanel(
+        condition = "input.tab === 'mental_health_analysis'",
+        div(
+          selectInput("psy_selector", "Psychological Problem", choices = unique(data$psychological_catehory)), 
+          selectInput("category_selector", "Category", unique(data$problem_category)),#choices = NULL),
+          selectInput("summary_selector", "Summary", unique(data$problem_summary))#choices = NULL)
+        )
+      )
     )
   ),
   dashboardBody()
