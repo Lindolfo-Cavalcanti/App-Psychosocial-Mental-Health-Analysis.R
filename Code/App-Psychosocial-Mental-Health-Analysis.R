@@ -2,7 +2,7 @@ library(shiny)
 library(shinydashboard)
 library(tidyverse)
 
-data = read.csv("Documents/Shiny/AppPsychosocial Mental Health Analysis/Data/Psychosocial_Health_Analysis.csv")
+data = read.csv("Data/Psychosocial_Health_Analysis.csv")
 
 data_psy = data %>% select(psychological_catehory)
 
