@@ -18,16 +18,22 @@ ui <- dashboardPage(
       menuItem("Home", tabName = "home", icon = icon("home")),
       menuItem("Mental Health Analysis", tabName = "mental_health_analysis", icon = icon("edit")),
       conditionalPanel(
-        condition = "input.tab === 'mental_health_analysis'",
+        condition = "input.tab == 'mental_health_analysis'",
         div(
           selectInput("psy_selector", "Psychological Problem", choices = unique(data$psychological_catehory)), 
-          selectInput("category_selector", "Category", unique(data$problem_category)),#choices = NULL),
-          selectInput("summary_selector", "Summary", unique(data$problem_summary))#choices = NULL)
+          selectInput("category_selector", "Category", choices = unique(data$problem_category)),#choices = NULL),
+          selectInput("summary_selector", "Summary", choices = unique(data$problem_summary)),
+          actionButton("Search_button", "Search", icon = icon("search"))#choices = NULL)
         )
       )
     )
   ),
-  dashboardBody()
+  dashboardBody(
+    tabItems(
+      tabItem(tabName = "home", includeMarkdown("/home/lindo/Documents/Shiny/App-Psychosocial-Mental-Health-Analysis.R/Markdown/Instuctions.Rmd")),
+      tabItem(tabName = "mental_health_analysis")
+    )
+  )
 )
 
 

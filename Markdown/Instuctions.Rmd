@@ -1,0 +1,51 @@
+# App Instructions
+
+Welcome to the Psychosocial Mental Health Analysis app!
+
+## Dataset Description
+
+This app utilizes the Psychosocial Mental Health Analysis dataset, available [here](https://www.kaggle.com/datasets/mdismielhossenabir/psychosocial-mental-health-analysis). The dataset includes information collected directly from individuals who have faced psychological issues. The dataset contains the following columns:
+
+**Age**: Age of the individual reporting the issue.
+
+**Gender**: Gender of the individual. Problem
+
+**Description**: Detailed text of the psychological problem faced.
+
+**Problem Summary**: Concise summary of the problem.
+
+**Problem Category**: General category of the problem.
+
+**Psychological Problem Category**: Specific psychological category of the problem. How the App Works
+
+## Navigation:
+
+On the left menu, click on the “Mental Health Analysis” tab to start your analysis. Data Selection:
+
+Psychological Problem: Choose the psychological problem category you want to study. This dropdown will display all available categories in the dataset.
+
+Problem Category: After selecting a psychological problem, this dropdown will show only the problem categories associated with the previous selection.
+
+Problem Summary: After selecting a problem category, this dropdown will display the summaries that match the previous selections.
+
+## Search:
+
+Click the “Search” button to view the data filtered based on your selections. The app will display a table with information corresponding to the applied filters.
+
+## Tips
+
+Ensure to make selections in the following order: Psychological Problem, Problem Category, and finally, Problem Summary.
+
+Use the search button to update the data view based on your choices.
+
+For any questions or additional information, please refer to the documentation or contact technical support.
+
+# Contact
+
+Email: [lindolfoj47.lj\@gmail.com](mailto:lindolfoj47.lj@gmail.com)
+
+Linkedin: [Lindolfo Cavalcanti](https://www.linkedin.com/in/lindolfo-cavalcanti-7363971a3/) 
+
+GitHub: <https://github.com/Lindolfo-Cavalcanti>
+
+Kaggle: <https://www.kaggle.com/lindolfocavalcanti>
