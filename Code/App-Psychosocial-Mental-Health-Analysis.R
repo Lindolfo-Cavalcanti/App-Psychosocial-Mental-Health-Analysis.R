@@ -4,11 +4,11 @@ library(tidyverse)
 
 data = read.csv("Data/Psychosocial_Health_Analysis.csv")
 
-data_psy = data %>% select(psychological_catehory)
+data_psy = unique(data$psychological_catehory)
 
-data_category = data %>% select(problem_category)
+data_category = unique(data$problem_category)
 
-data_summary = data %>% select(problem_summary)
+data_summary = unique(data$problem_summary)
 
 ui <- dashboardPage(
   dashboardHeader(title = "Psychosocial Analysis"),
@@ -19,10 +19,9 @@ ui <- dashboardPage(
       menuItem("Mental Health Analysis", tabName = "Mental Health Analysis", icon = icon("edit")),
       conditionalPanel(condition = "input.tab == 'Mental Health Analysis'",
                        div(
-                         fileInput("file", "Upload File", multiple = FALSE, accept = 'csv'),
-                         # Psychological Problem,
-                         # Problem Category
-                         # Problem Summary
+                         selectInput("psy_selector", "Psychological Problem", choices = data_psy), 
+                         selectInput("category_selector", "Category", choices = data_category),
+                         selectInput("summary_selector", "Summary", choices = data_summary)
                        ))
     )
   ),
@@ -35,3 +34,4 @@ server = function(input, output, session) {
 }
 
 shinyApp(ui, server)
+
