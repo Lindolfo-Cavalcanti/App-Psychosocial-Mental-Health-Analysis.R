@@ -29,3 +29,10 @@ The Shiny app uses the following libraries:
 By leveraging this Shiny app, researchers can streamline the process of analyzing psychosocial data, making it easier to uncover meaningful insights and contribute to the field of mental health research.
 
 Feel free to test it on your machine. Remember to change the paths and a recomend run the code line by line.
+
+
+![Screenshot from 2024-07-25 00-26-38](https://github.com/user-attachments/assets/f8e43928-edb2-45e7-95f5-56f1011c3f5e)
+
+![Screenshot from 2024-07-25 00-27-02](https://github.com/user-attachments/assets/098de18d-60e8-4330-92df-7925339217ca)
+
+![Screenshot from 2024-07-25 00-27-17](https://github.com/user-attachments/assets/577d1fee-66ff-4ca3-a441-fbc5dc2d6676)
