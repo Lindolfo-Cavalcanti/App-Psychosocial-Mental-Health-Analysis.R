@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:6809/ -->
+<html style="height: auto;" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">jquery[3.6.0];shiny-css[1.8.1.1];shiny-javascript[1.8.1.1];font-awesome[6.4.2];selectize[0.15.2];bootstrap[3.4.1];AdminLTE[2.0.6];shinydashboard[0.7.2]</script>
+<script src="./Psychosocial Analysis_files/jquery.min.js"></script>
+<link href="./Psychosocial Analysis_files/shiny.min.css" rel="stylesheet">
+<script src="./Psychosocial Analysis_files/shiny.min.js"></script>
+<link href="./Psychosocial Analysis_files/all.min.css" rel="stylesheet">
+<link href="./Psychosocial Analysis_files/v4-shims.min.css" rel="stylesheet">
+<link href="./Psychosocial Analysis_files/selectize.bootstrap3.css" rel="stylesheet">
+<script src="./Psychosocial Analysis_files/selectize.min.js"></script>
+<script src="./Psychosocial Analysis_files/selectize-plugin-a11y.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./Psychosocial Analysis_files/bootstrap.min.css" rel="stylesheet">
+<link href="./Psychosocial Analysis_files/bootstrap-accessibility.min.css" rel="stylesheet">
+<script src="./Psychosocial Analysis_files/bootstrap.min.js"></script>
+<script src="./Psychosocial Analysis_files/bootstrap-accessibility.min.js"></script>
+<link href="./Psychosocial Analysis_files/AdminLTE.min.css" rel="stylesheet">
+<link href="./Psychosocial Analysis_files/_all-skins.min.css" rel="stylesheet">
+<script src="./Psychosocial Analysis_files/app.min.js"></script>
+<link href="./Psychosocial Analysis_files/shinydashboard.css" rel="stylesheet">
+<script src="./Psychosocial Analysis_files/shinydashboard.min.js"></script>  <title>Psychosocial Analysis</title>
+</head>
+<body class="skin-blue" style="min-height: 611px; height: auto;">
+  <div class="wrapper" style="height: auto;">
+    <header class="main-header">
+      <span class="logo">Psychosocial Analysis</span>
+      <nav class="navbar navbar-static-top" role="navigation">
+        <span style="display:none;">
+          <i class="fas fa-bars" role="presentation" aria-label="bars icon"></i>
+        </span>
+        <a href="http://127.0.0.1:6809/#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav"></ul>
+        </div>
+      </nav>
+    </header>
+    <aside id="sidebarCollapsed" class="main-sidebar shiny-bound-input" data-collapsed="false">
+      <section id="sidebarItemExpanded" class="sidebar shiny-bound-input">
+        <ul class="sidebar-menu">
+          <li class="active">
+            <a href="http://127.0.0.1:6809/#shiny-tab-home" data-toggle="tab" data-value="home" aria-expanded="true" tabindex="0" aria-selected="true">
+              <i class="fas fa-house" role="presentation" aria-label="house icon"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:6809/#shiny-tab-mental_health_analysis" data-toggle="tab" data-value="mental_health_analysis">
+              <i class="far fa-pen-to-square" role="presentation" aria-label="pen-to-square icon"></i>
+              <span>Mental Health Analysis</span>
+            </a>
+          </li>
+          <div class="shiny-panel-conditional" data-display-if="input.tab == &#39;mental_health_analysis&#39;" data-ns-prefix="" style="display: none;">
+            <div>
+              <div class="form-group shiny-input-container">
+                <label class="control-label" id="psy_selector-label" for="psy_selector-selectized">Psychological Problem</label>
+                <div>
+                  <select id="psy_selector" class="shiny-input-select selectized shiny-bound-input" tabindex="-1" style="display: none;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<option value="Stress" selected="selected">Stress</option></select><div class="shiny-input-select selectize-control single plugin-selectize-plugin-a11y"><div class="selectize-input items full has-options has-items"><div class="item" data-value="Stress">Stress</div><input type="text" autocomplete="new-password" autofill="no" tabindex="" id="psy_selector-selectized" role="combobox" aria-expanded="false" haspopup="listbox" aria-owns="t7tlgqgjkp" style="width: 4px;"></div><div class="single selectize-dropdown shiny-input-select plugin-selectize-plugin-a11y" style="display: none;"><div class="selectize-dropdown-content" tabindex="-1" role="listbox" id="t7tlgqgjkp"></div></div></div>
+                  <script type="application/json" data-for="psy_selector" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+                </div>
+              </div>
+              <div class="form-group shiny-input-container">
+                <label class="control-label" id="category_selector-label" for="category_selector-selectized">Category</label>
+                <div>
+                  <select id="category_selector" class="shiny-input-select shiny-bound-input selectized" style="display: none;" aria-live="polite" tabindex="-1">
+
+
+
+
+
+
+
+
+
+<option value="Financial" selected="selected">Financial</option></select><div class="shiny-input-select shiny-bound-input selectize-control single plugin-selectize-plugin-a11y"><div class="selectize-input items full has-options has-items"><div class="item" data-value="Financial">Financial</div><input type="text" autocomplete="new-password" autofill="no" tabindex="" id="category_selector-selectized" role="combobox" aria-expanded="false" haspopup="listbox" aria-owns="y5pddygus9" style="width: 4px;"></div><div class="single selectize-dropdown shiny-input-select shiny-bound-input plugin-selectize-plugin-a11y" style="display: none;"><div class="selectize-dropdown-content" tabindex="-1" role="listbox" id="y5pddygus9"></div></div></div>
+                  <script type="application/json" data-for="category_selector" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+                </div>
+              </div>
+              <div class="form-group shiny-input-container">
+                <label class="control-label" id="summary_selector-label" for="summary_selector-selectized">Summary</label>
+                <div>
+                  <select id="summary_selector" class="shiny-input-select shiny-bound-input selectized" style="display: none;" aria-live="polite" tabindex="-1">
+<option value="Financial and emotional Stressseeking support.
+
+" selected="selected">Financial and emotional Stressseeking support.
+
+</option></select><div class="shiny-input-select shiny-bound-input selectize-control single plugin-selectize-plugin-a11y"><div class="selectize-input items full has-options has-items"><div class="item" data-value="Financial and emotional Stressseeking support.
+
+">Financial and emotional Stressseeking support.
+
+</div><input type="text" autocomplete="new-password" autofill="no" tabindex="" id="summary_selector-selectized" role="combobox" aria-expanded="false" haspopup="listbox" aria-owns="m7jzjjt0jo" style="width: 4px;"></div><div class="single selectize-dropdown shiny-input-select shiny-bound-input plugin-selectize-plugin-a11y" style="display: none;"><div class="selectize-dropdown-content" tabindex="-1" role="listbox" id="m7jzjjt0jo"></div></div></div>
+                  <script type="application/json" data-for="summary_selector" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+                </div>
+              </div>
+              <button id="search_button" type="button" class="btn btn-default action-button shiny-bound-input">
+                <i class="fas fa-magnifying-glass" role="presentation" aria-label="magnifying-glass icon"></i>
+                Search
+              </button>
+            </div>
+          </div>
+          <div id="tab" class="sidebarMenuSelectedTabItem shiny-bound-input" data-value="home"></div>
+        </ul>
+      </section>
+    </aside>
+    <div class="content-wrapper" style="min-height: 704px;">
+      <section class="content">
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="shiny-tab-home" aria-hidden="false" tabindex="0"><h1 id="app-instructions">App Instructions</h1>
+<p>Welcome to the Psychosocial Mental Health Analysis app!</p>
+<h2 id="dataset-description">Dataset Description</h2>
+<p>This app utilizes the Psychosocial Mental Health Analysis dataset, available <a href="https://www.kaggle.com/datasets/mdismielhossenabir/psychosocial-mental-health-analysis">here</a>. The dataset includes information collected directly from individuals who have faced psychological issues. The dataset contains the following columns:</p>
+<p><strong>Age</strong>: Age of the individual reporting the issue.</p>
+<p><strong>Gender</strong>: Gender of the individual. Problem</p>
+<p><strong>Description</strong>: Detailed text of the psychological problem faced.</p>
+<p><strong>Problem Summary</strong>: Concise summary of the problem.</p>
+<p><strong>Problem Category</strong>: General category of the problem.</p>
+<p><strong>Psychological Problem Category</strong>: Specific psychological category of the problem. How the App Works</p>
+<h2 id="navigation">Navigation:</h2>
+<p>On the left menu, click on the “Mental Health Analysis” tab to start your analysis. Data Selection:</p>
+<p>Psychological Problem: Choose the psychological problem category you want to study. This dropdown will display all available categories in the dataset.</p>
+<p>Problem Category: After selecting a psychological problem, this dropdown will show only the problem categories associated with the previous selection.</p>
+<p>Problem Summary: After selecting a problem category, this dropdown will display the summaries that match the previous selections.</p>
+<h2 id="search">Search:</h2>
+<p>Click the <code>Search</code> button to view the data filtered based on your selections. The app will display a table with information corresponding to the applied filters.</p>
+<h2 id="tips">Tips</h2>
+<p>Ensure to make selections in the following order: Psychological Problem, Problem Category, and finally, Problem Summary.</p>
+<p>Use the search button to update the data view based on your choices.</p>
+<p>For any questions or additional information, please refer to the documentation or contact technical support.</p>
+<h1 id="contact">Contact</h1>
+<p>Email: <a href="mailto:lindolfoj47.lj@gmail.com">lindolfoj47.lj@gmail.com</a></p>
+<p>Linkedin: <a href="https://www.linkedin.com/in/lindolfo-cavalcanti-7363971a3/">Lindolfo Cavalcanti</a></p>
+<p>GitHub: <a href="https://github.com/Lindolfo-Cavalcanti">Lindolfo-Cavalcanti</a></p>
+<p>Kaggle: <a href="https://www.kaggle.com/lindolfocavalcanti">Lindolfo Cavalcanti</a></p>
+</div>
+          <div role="tabpanel" class="tab-pane" id="shiny-tab-mental_health_analysis">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="box box-solid box-primary">
+                  <div class="box-header">
+                    <h3 class="box-title">Problem Description</h3>
+                    <div class="box-tools pull-right">
+                      <button class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fas fa-minus" role="presentation" aria-label="minus icon"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="box-body">
+                    <div id="filtered_text_ui" class="shiny-html-output shiny-bound-output" aria-live="polite"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+<div aria-live="assertive" role="log" aria-relevant="additions" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; margin-top: -1px; clip: rect(1px, 1px, 1px, 1px); overflow: hidden;"></div><div aria-live="assertive" role="log" aria-relevant="additions" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; margin-top: -1px; clip: rect(1px, 1px, 1px, 1px); overflow: hidden;"></div><div aria-live="assertive" role="log" aria-relevant="additions" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; margin-top: -1px; clip: rect(1px, 1px, 1px, 1px); overflow: hidden;"></div></body></html>
