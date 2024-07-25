@@ -30,7 +30,7 @@ Problem Summary: After selecting a problem category, this dropdown will display 
 
 ## Search:
 
-Click the “Search” button to view the data filtered based on your selections. The app will display a table with information corresponding to the applied filters.
+Click the `Search` button to view the data filtered based on your selections. The app will display a table with information corresponding to the applied filters.
 
 ## Tips
 
@@ -44,8 +44,8 @@ For any questions or additional information, please refer to the documentation o
 
 Email: [lindolfoj47.lj\@gmail.com](mailto:lindolfoj47.lj@gmail.com)
 
-Linkedin: [Lindolfo Cavalcanti](https://www.linkedin.com/in/lindolfo-cavalcanti-7363971a3/) 
+Linkedin: [Lindolfo Cavalcanti](https://www.linkedin.com/in/lindolfo-cavalcanti-7363971a3/)
 
-GitHub: <https://github.com/Lindolfo-Cavalcanti>
+GitHub: [Lindolfo-Cavalcanti](https://github.com/Lindolfo-Cavalcanti)
 
-Kaggle: <https://www.kaggle.com/lindolfocavalcanti>
+Kaggle: [Lindolfo Cavalcanti](https://www.kaggle.com/lindolfocavalcanti)
