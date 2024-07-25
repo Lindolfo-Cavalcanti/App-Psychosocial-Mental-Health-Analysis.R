@@ -64,7 +64,8 @@ server <- function(input, output, session) {
   
   output$filtered_text_ui <- renderUI({
     descriptions <- filtered_data() %>%
-      pull(Problem_description)
+      mutate(description = paste("Description:", Problem_description, "<br>Age:", Age, "<br>Gender:", Gender)) %>%
+      pull(description)
     
     description_html <- if (length(descriptions) > 0) {
       paste(
@@ -84,4 +85,3 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui, server)
-
